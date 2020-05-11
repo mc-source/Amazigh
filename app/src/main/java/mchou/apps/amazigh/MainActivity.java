@@ -47,14 +47,15 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         protected String doInBackground(String... params) {
+
             OkHttpClient client = new OkHttpClient();
-            RequestBody formBody = new FormBody.Builder()
+           /* RequestBody formBody = new FormBody.Builder()
                     .add("txt_terme", "maison")
                     .add("idlang","fr")
-                    .build();
+                    .build();*/
             Request request = new Request.Builder()
-                    .url("https://tal.ircam.ma/dglai/lexieam.php")
-                    .post(formBody)
+                    .url("https://fr.glosbe.com/fr/kab/histoire") //"https://tal.ircam.ma/dglai/lexieam.php")
+                    //.post(formBody)
                     .build();
 
 
